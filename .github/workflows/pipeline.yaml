@@ -31,7 +31,7 @@ jobs:
       - name: Run Training Job
         run: |
           echo "Starting GPU training job..."
-          echo "Training complete."
+          exit 1
 
       - name: Create error log file on failure
         if: failure()
